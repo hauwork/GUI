@@ -30,10 +30,13 @@ public class NewJFrame extends javax.swing.JFrame
     {
 
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("jButton1");
+
+        jButton2.setText("jButton2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -43,13 +46,19 @@ public class NewJFrame extends javax.swing.JFrame
                 .addGap(55, 55, 55)
                 .addComponent(jButton1)
                 .addContainerGap(272, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(102, 102, 102))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addComponent(jButton1)
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addComponent(jButton2)
+                .addContainerGap(176, Short.MAX_VALUE))
         );
 
         pack();
@@ -102,5 +111,6 @@ public class NewJFrame extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables
 }
